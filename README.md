@@ -11,9 +11,8 @@ npm install eik-validator --save
 ## Usage
 
 ```
-var isValidEIK = require('eik-validator');
-isValidEIK('121292046'); // true
-
+var EIKValidator = require('eik-validator');
+EIKValidator.isValidEIK('121292046'); // true
 ```
 
 ## Tests
