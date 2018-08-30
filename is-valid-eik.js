@@ -2,6 +2,10 @@
 
 function isValidEIK(v) {
   var matches;
+
+  //make sure provided value is a string
+  v = String(v);
+
   if (!(matches = v.match(/^((\d{9})(\d{4})?)$/)))
     return false;
 
