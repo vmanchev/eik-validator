@@ -40,3 +40,10 @@ export function isValidEIK(eik: string): boolean {
 
   return (a13 == a[3]);
 }
+
+export function isValidVAT(vat: string): boolean {
+
+  const parts = vat.match(/^(BG)(\d{9,})/);
+
+  return parts !== null && isValidEIK(parts[2]);
+}

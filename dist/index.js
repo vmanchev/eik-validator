@@ -31,3 +31,8 @@ function isValidEIK(eik) {
     return (a13 == a[3]);
 }
 exports.isValidEIK = isValidEIK;
+function isValidVAT(vat) {
+    var parts = vat.match(/^(BG)(\d{9,})/);
+    return parts !== null && isValidEIK(parts[2]);
+}
+exports.isValidVAT = isValidVAT;

@@ -1,7 +1,7 @@
 {
-  "name": "eik-validator",
+  "name": "nap-validator",
   "version": "1.0.5",
-  "description": "EIK (Bulstat) Validator",
+  "description": "NAP Validator (EIK, VAT)",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec"
@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vmanchev/eik-validator.git"
+    "url": "git+https://github.com/vmanchev/nap-validator.git"
   },
   "keywords": [
     "eik",
